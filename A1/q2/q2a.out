@@ -1,0 +1,3 @@
+Grid search done over 200 rho-values.
+Best rho = -0.0334, giving an average of 754.25 periods.
+Total elapsed time: 0.0914 seconds.

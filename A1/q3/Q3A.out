@@ -1,0 +1,20 @@
+Scaling Factor: 20x
+GPU NDVI computation time: 0.190708 seconds
+CPU NDVI computation time: 0.754088 seconds
+Saved NDVI image as ndvi_gpu_scale_20.png
+
+Scaling Factor: 50x
+GPU NDVI computation time: 0.503964 seconds
+CPU NDVI computation time: 1.880784 seconds
+Saved NDVI image as ndvi_gpu_scale_50.png
+
+Scaling Factor: 100x
+GPU NDVI computation time: 1.023300 seconds
+CPU NDVI computation time: 3.761601 seconds
+Saved NDVI image as ndvi_gpu_scale_100.png
+
+Scaling Factor: 150x
+GPU NDVI computation time: 1.591579 seconds
+CPU NDVI computation time: 5.664021 seconds
+Saved NDVI image as ndvi_gpu_scale_150.png
+
