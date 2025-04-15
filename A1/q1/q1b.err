@@ -1,1 +1,4 @@
-/var/spool/slurm/d/job30325117/slurm_script: line 20: ython: command not found
+/home/zw2685/MACS30123-Assignment-PaulWang/A1/q1/q1a_aot.py:1: NumbaPendingDeprecationWarning: [1mThe 'pycc' module is pending deprecation. Replacement technology is being developed.
+
+Pending Deprecation in Numba 0.57.0. For more information please see: https://numba.readthedocs.io/en/stable/reference/deprecation.html#deprecation-of-the-numba-pycc-module[0m
+  from numba.pycc import CC

@@ -7,26 +7,26 @@ cores = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
 
 # Corresponding total elapsed times (in seconds) for each run
 elapsed_times = [
-    0.0508,  # 1 core
-    0.0177,  # 2 cores
-    0.0189,  # 3 cores
-    0.0121,  # 4 cores
-    0.0091,  # 5 cores
-    0.0087,  # 6 cores
-    0.0074,  # 7 cores
-    0.0041,  # 8 cores
-    0.0039,  # 9 cores
-    0.0028,  # 10 cores
-    0.0029,  # 11 cores
-    0.0031,  # 12 cores
-    0.0029,  # 13 cores
+    0.0281,  # 1 core
+    0.0162,  # 2 cores
+    0.0109,  # 3 cores
+    0.0081,  # 4 cores
+    0.0063,  # 5 cores
+    0.0054,  # 6 cores
+    0.0046,  # 7 cores
+    0.0034,  # 8 cores
+    0.0032,  # 9 cores
+    0.0025,  # 10 cores
+    0.0024,  # 11 cores
+    0.0022,  # 12 cores
+    0.0022,  # 13 cores
     0.0021,  # 14 cores
-    0.0048,  # 15 cores
-    0.0022,  # 16 cores
-    0.0019,  # 17 cores
-    0.0198,  # 18 cores
+    0.0019,  # 15 cores
+    0.0019,  # 16 cores
+    0.0017,  # 17 cores
+    0.0016,  # 18 cores
     0.0016,  # 19 cores
-    0.0013   # 20 cores
+    0.0015   # 20 cores
 ]
 
 # Create the plot

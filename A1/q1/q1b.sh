@@ -17,7 +17,7 @@
 module load python
 module load mpich
 
-ython q1a_aot.py build_ext --inplace
+python q1a_aot.py build_ext --inplace
 
 # Output file for storing times
 RESULT_FILE="q1b_times.out"
@@ -31,3 +31,5 @@ do
 
     mpirun -n "$i" python3 q1b_rank0.py >> $RESULT_FILE
 done
+
+python q1b_plot.py

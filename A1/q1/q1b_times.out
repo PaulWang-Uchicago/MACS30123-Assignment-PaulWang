@@ -1,61 +1,61 @@
 Scaling study results
 ------------------------------
 Running with 1 MPI processes:
-Total elapsed time (max across processes): 0.0508 seconds
+Average elapsed time (across processes): 0.0325 seconds
 ------------------------------
 Running with 2 MPI processes:
-Total elapsed time (max across processes): 0.0177 seconds
+Average elapsed time (across processes): 0.0176 seconds
 ------------------------------
 Running with 3 MPI processes:
-Total elapsed time (max across processes): 0.0189 seconds
+Average elapsed time (across processes): 0.0118 seconds
 ------------------------------
 Running with 4 MPI processes:
-Total elapsed time (max across processes): 0.0121 seconds
+Average elapsed time (across processes): 0.0085 seconds
 ------------------------------
 Running with 5 MPI processes:
-Total elapsed time (max across processes): 0.0091 seconds
+Average elapsed time (across processes): 0.0066 seconds
 ------------------------------
 Running with 6 MPI processes:
-Total elapsed time (max across processes): 0.0087 seconds
+Average elapsed time (across processes): 0.0060 seconds
 ------------------------------
 Running with 7 MPI processes:
-Total elapsed time (max across processes): 0.0074 seconds
+Average elapsed time (across processes): 0.0048 seconds
 ------------------------------
 Running with 8 MPI processes:
-Total elapsed time (max across processes): 0.0041 seconds
+Average elapsed time (across processes): 0.0035 seconds
 ------------------------------
 Running with 9 MPI processes:
-Total elapsed time (max across processes): 0.0039 seconds
+Average elapsed time (across processes): 0.0033 seconds
 ------------------------------
 Running with 10 MPI processes:
-Total elapsed time (max across processes): 0.0028 seconds
+Average elapsed time (across processes): 0.0027 seconds
 ------------------------------
 Running with 11 MPI processes:
-Total elapsed time (max across processes): 0.0029 seconds
+Average elapsed time (across processes): 0.0025 seconds
 ------------------------------
 Running with 12 MPI processes:
-Total elapsed time (max across processes): 0.0031 seconds
+Average elapsed time (across processes): 0.0024 seconds
 ------------------------------
 Running with 13 MPI processes:
-Total elapsed time (max across processes): 0.0029 seconds
+Average elapsed time (across processes): 0.0023 seconds
 ------------------------------
 Running with 14 MPI processes:
-Total elapsed time (max across processes): 0.0021 seconds
+Average elapsed time (across processes): 0.0021 seconds
 ------------------------------
 Running with 15 MPI processes:
-Total elapsed time (max across processes): 0.0048 seconds
+Average elapsed time (across processes): 0.0020 seconds
 ------------------------------
 Running with 16 MPI processes:
-Total elapsed time (max across processes): 0.0022 seconds
+Average elapsed time (across processes): 0.0019 seconds
 ------------------------------
 Running with 17 MPI processes:
-Total elapsed time (max across processes): 0.0019 seconds
+Average elapsed time (across processes): 0.0017 seconds
 ------------------------------
 Running with 18 MPI processes:
-Total elapsed time (max across processes): 0.0198 seconds
+Average elapsed time (across processes): 0.0018 seconds
 ------------------------------
 Running with 19 MPI processes:
-Total elapsed time (max across processes): 0.0016 seconds
+Average elapsed time (across processes): 0.0017 seconds
 ------------------------------
 Running with 20 MPI processes:
-Total elapsed time (max across processes): 0.0013 seconds
+Average elapsed time (across processes): 0.0014 seconds

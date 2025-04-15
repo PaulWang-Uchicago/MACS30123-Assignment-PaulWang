@@ -33,8 +33,9 @@ local_results = q1a_aot.simulate_z_mat(eps_mat, rho, mu, z_0, T, group)
 end_time = time.time()
 local_elapsed = end_time - start_time
 
-# Optionally, reduce to get the maximum time taken across processes
-total_elapsed = comm.reduce(local_elapsed, op=MPI.MAX, root=0)
+# Replace the reduction operation with MPI.SUM
+total_elapsed = comm.reduce(local_elapsed, op=MPI.SUM, root=0)
 
 if rank == 0:
-    print(f"Total elapsed time (max across processes): {total_elapsed:.4f} seconds")
+    mean_elapsed = total_elapsed / size
+    print(f"Average elapsed time (across processes): {mean_elapsed:.4f} seconds")
