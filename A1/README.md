@@ -112,7 +112,21 @@ For this portion of the assignment, we compute the NDVI (Normalized Difference V
 - **Extended Code:**  
   For larger-scale experiments—such as multiple Landsat scenes or higher-resolution data—the same NDVI computation is adapted in [q3c.py](https://github.com/PaulWang-Uchicago/MACS30123-Assignment-PaulWang/blob/main/A1/q3/q3c.py).  
 - **Performance Observations:**  
-  The corresponding results are documented in [Q3C.out](https://github.com/PaulWang-Uchicago/MACS30123-Assignment-PaulWang/blob/main/A1/q3/Q3C.out). As scene size (or the number of scenes) increases, the GPU approach continues to demonstrate substantial time savings, though GPU memory management and kernel configuration (thread/block dimensions) become more critical for maintaining efficiency.
+  The corresponding results are Scaling Factor: 20x
+GPU NDVI computation time: 0.188254 seconds
+CPU NDVI computation time: 0.743359 seconds
+Scaling Factor: 50x
+GPU NDVI computation time: 0.500031 seconds
+CPU NDVI computation time: 1.862294 seconds
+Scaling Factor: 100x
+GPU NDVI computation time: 1.010000 seconds
+CPU NDVI computation time: 3.719078 seconds
+Scaling Factor: 150x
+GPU NDVI computation time: 1.579718 seconds
+CPU NDVI computation time: 5.612612 seconds
+
+These results are documented in [Q3C.out](https://github.com/PaulWang-Uchicago/MACS30123-Assignment-PaulWang/blob/main/A1/q3/Q3C.out). As scene size (or the number of scenes) increases, the GPU approach continues to demonstrate substantial time savings, though GPU memory management and kernel configuration (thread/block dimensions) become more critical for maintaining efficiency.
+
 - **Job Submission:**  
   The script [q3c.sh](https://github.com/PaulWang-Uchicago/MACS30123-Assignment-PaulWang/blob/main/A1/q3/q3c.sh) was used for automated submission to the cluster.
 
