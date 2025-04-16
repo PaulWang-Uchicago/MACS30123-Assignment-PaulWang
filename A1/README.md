@@ -71,7 +71,9 @@ This question uses an embarrassingly parallel grid search to find the value of $
 
 - **Plot Output:**  
   The visualization is available in [grid_search_results.png](https://github.com/PaulWang-Uchicago/MACS30123-Assignment-PaulWang/blob/main/A1/q2/grid_search_results.png).
+  
     ![grid_search_results.png](https://github.com/PaulWang-Uchicago/MACS30123-Assignment-PaulWang/blob/main/A1/q2/grid_search_results.png)
+  
   The [q2a.py](https://github.com/PaulWang-Uchicago/MACS30123-Assignment-PaulWang/blob/main/A1/q2/q2a.py) script contains the code for this analysis.
 
 ### (2.c) Optimal Parameter and Performance Metrics
