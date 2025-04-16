@@ -12,7 +12,7 @@ In this section, two versions of the code are compared:
 
 - **Original Version:**  
   The script is executed as provided, without any modifications for performance.  
-  **Script:** ![q1a_original.py](https://github.com/PaulWang-Uchicago/MACS30123-Assignment-PaulWang/blob/main/A1/q1/q1a_original.py)
+  **Script:** [q1a_original.py](https://github.com/PaulWang-Uchicago/MACS30123-Assignment-PaulWang/blob/main/A1/q1/q1a_original.py)
 
 - **Pre-Compiled Version with AOT:**  
   A portion of the code is refactored into a separate function and pre-compiled ahead-of-time using Numba to boost performance.  
