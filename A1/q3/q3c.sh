@@ -1,7 +1,7 @@
 #!/bin/bash
-#SBATCH --job-name=Q3A
-#SBATCH --output=Q3A.out
-#SBATCH --error=Q3A.err
+#SBATCH --job-name=Q3C
+#SBATCH --output=Q3C.out
+#SBATCH --error=Q3C.err
 #SBATCH --ntasks=1
 #SBATCH --nodes=1
 #SBATCH --partition=gpu

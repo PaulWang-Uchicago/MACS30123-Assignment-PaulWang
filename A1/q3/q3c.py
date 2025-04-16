@@ -9,8 +9,8 @@ import pycuda.autoinit
 from pycuda.compiler import SourceModule
 
 # Load the Satellite Bands (original data)
-red_band_path = '/project/macs30123/landsat8/LC08_B4.tif'   # red
-nir_band_path = '/project/macs30123/landsat8/LC08_B5.tif'    # nir
+red_band_path = '/project/macs30123/landsat8/LC08_B4.tif'
+nir_band_path = '/project/macs30123/landsat8/LC08_B5.tif'
 
 with rasterio.open(red_band_path) as src:
     red_band_original = src.read(1).astype(np.float64)
@@ -24,13 +24,14 @@ for scale in [20, 50, 100, 150]:
     red_band = np.tile(red_band_original, scale)
     nir_band = np.tile(nir_band_original, scale)
     
+    start_gpu = time.time()
     # Flatten the data for GPU processing
     red_band_flat = red_band.ravel()
     nir_band_flat = nir_band.ravel()
     num_pixels = np.int32(red_band_flat.size)
     ndvi_result_flat = np.empty_like(red_band_flat)
-    
-    # ---- SETUP THE KERNEL INSIDE THE LOOP ----
+
+    # Setup kernel
     ndvi_kernel_code = """
     __global__ void compute_ndvi(const double *red, const double *nir, double *ndvi, int size)
     {
@@ -48,10 +49,8 @@ for scale in [20, 50, 100, 150]:
     """
     mod = SourceModule(ndvi_kernel_code)
     compute_ndvi = mod.get_function("compute_ndvi")
-    # ---- END OF KERNEL SETUP ----
     
     # ---- GPU NDVI Calculation ----
-    start_gpu = time.time()
     
     # Allocate GPU memory for input arrays and output array
     red_gpu = cuda.mem_alloc(red_band_flat.nbytes)

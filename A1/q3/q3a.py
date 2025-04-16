@@ -18,14 +18,13 @@ with rasterio.open(red_band_path) as src:
 with rasterio.open(nir_band_path) as src:
     nir_band = src.read(1).astype(np.float64)
 
+start_gpu = time.time()
+
 # Prepare Data for GPU Computation
 red_band_flat = red_band.ravel()
 nir_band_flat = nir_band.ravel()
 num_pixels = np.int32(red_band_flat.size)
 ndvi_result_flat = np.empty_like(red_band_flat)
-
-# Initialize GPU
-start_gpu = time.time()
 
 # CUDA Kernel
 ndvi_kernel_code = """

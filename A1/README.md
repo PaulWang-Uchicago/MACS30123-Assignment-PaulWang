@@ -104,8 +104,8 @@ For this portion of the assignment, we compute the NDVI (Normalized Difference V
 ### (3.b) Timing Results and Execution Details
 
 - **Code and Output Files:**  
-  Both GPU and CPU timing results are captured in the output file [Q3A.out](https://github.com/PaulWang-Uchicago/MACS30123-Assignment-PaulWang/blob/main/A1/q3/Q3A.out). GPU NDVI computation time is **0.063545 seconds**, while 
-  CPU NDVI computation time is **0.034748 seconds**.
+  Both GPU and CPU timing results are captured in the output file [Q3A.out](https://github.com/PaulWang-Uchicago/MACS30123-Assignment-PaulWang/blob/main/A1/q3/Q3A.out). GPU NDVI computation time is **0.352970 seconds**, while 
+  CPU NDVI computation time is **0.031438 seconds**.
  
   The SLURM job submission script used is [q3a.sh](https://github.com/PaulWang-Uchicago/MACS30123-Assignment-PaulWang/blob/main/A1/q3/q3a.sh).
 
@@ -121,20 +121,20 @@ For this portion of the assignment, we compute the NDVI (Normalized Difference V
   Experiments were conducted using various scaling factors with the following results:
 
   - **Scaling Factor: 20x**  
-    - GPU NDVI computation time: **0.188254 seconds**  
-    - CPU NDVI computation time: **0.743359 seconds**
+    - GPU NDVI computation time: **0.445072 seconds**  
+    - CPU NDVI computation time: **0.746168 seconds**
 
   - **Scaling Factor: 50x**  
-    - GPU NDVI computation time: **0.500031 seconds**  
-    - CPU NDVI computation time: **1.862294 seconds**
+    - GPU NDVI computation time: **0.508294 seconds**  
+    - CPU NDVI computation time: **1.870805 seconds**
 
   - **Scaling Factor: 100x**  
-    - GPU NDVI computation time: **1.010000 seconds**  
-    - CPU NDVI computation time: **3.719078 seconds**
+    - GPU NDVI computation time: **1.025784 seconds**  
+    - CPU NDVI computation time: **3.741287 seconds**
 
   - **Scaling Factor: 150x**  
-    - GPU NDVI computation time: **1.579718 seconds**  
-    - CPU NDVI computation time: **5.612612 seconds**
+    - GPU NDVI computation time: **1.567485 seconds**  
+    - CPU NDVI computation time: **5.627777 seconds**
 
   These results are documented in [Q3C.out](https://github.com/PaulWang-Uchicago/MACS30123-Assignment-PaulWang/blob/main/A1/q3/Q3C.out). The data clearly illustrates that as the data size increases, the GPU approach delivers substantial time savings compared to the CPU version.
   
