@@ -43,6 +43,8 @@ For this part, a series of 20 simulation runs was executed using a script design
 - **Visualization:**  
   A plot summarizing the timing data for the 20 simulation runs is available here: [q1b_plot.png](https://github.com/PaulWang-Uchicago/MACS30123-Assignment-PaulWang/blob/main/A1/q1/q1b_plot.png).
 
+  ![q1b_plot.png](https://github.com/PaulWang-Uchicago/MACS30123-Assignment-PaulWang/blob/main/A1/q1/q1b_plot.png)
+
 ### (1.c) Discussion of Speedup
 
 The observed speedup is not linear. According to Amdahl’s Law, even a small portion of sequential code can limit the maximum achievable speedup regardless of the number of cores used.
@@ -70,7 +72,10 @@ This question uses an embarrassingly parallel grid search to find the value of $
   After collecting the simulation results from the grid search, the average number of periods until the first negative or zero health value is plotted, with the $y$-axis representing the average periods and the $x$-axis representing $\rho$.
 
 - **Plot Output:**  
-  The visualization is available in [grid_search_results.png](https://github.com/PaulWang-Uchicago/MACS30123-Assignment-PaulWang/blob/main/A1/q2/grid_search_results.png).  
+  The visualization is available in [grid_search_results.png](https://github.com/PaulWang-Uchicago/MACS30123-Assignment-PaulWang/blob/main/A1/q2/grid_search_results.png).
+  
+    ![grid_search_results.png](https://github.com/PaulWang-Uchicago/MACS30123-Assignment-PaulWang/blob/main/A1/q2/grid_search_results.png)
+  
   The [q2a.py](https://github.com/PaulWang-Uchicago/MACS30123-Assignment-PaulWang/blob/main/A1/q2/q2a.py) script contains the code for this analysis.
 
 ### (2.c) Optimal Parameter and Performance Metrics
@@ -100,6 +105,7 @@ For this portion of the assignment, we compute the NDVI (Normalized Difference V
 
 - **Visualization:**  
   The resulting NDVI map is shown in [ndvi_gpu.png](https://github.com/PaulWang-Uchicago/MACS30123-Assignment-PaulWang/blob/main/A1/q3/ndvi_gpu.png), which closely matches the reference figure provided in the assignment prompt.
+  ![ndvi_gpu.png](https://github.com/PaulWang-Uchicago/MACS30123-Assignment-PaulWang/blob/main/A1/q3/ndvi_gpu.png)
 
 ### (3.b) Timing Results and Execution Details
 
